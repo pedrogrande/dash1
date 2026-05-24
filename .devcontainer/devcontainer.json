@@ -1,0 +1,11 @@
+{
+  "name": "Dash",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "dash-api",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8000, 5432],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteEnv": {
+    "RUNTIME_ENV": "dev"
+  }
+}
